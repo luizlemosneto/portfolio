@@ -2,6 +2,7 @@
 <html lang="pt-BR"><head><meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no,email=no,address=no">
 <title>Luiz Lemos Neto | Tributação &amp; IA</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -109,6 +110,16 @@ footer{position:relative;z-index:10;text-align:center;color:var(--mu);font-size:
 .glow.open>.arw{transform:rotate(180deg)}
 .ca{display:flex;flex-direction:column;gap:12px;min-width:240px}.ca .pill{justify-content:center}.cta .ghost{background:rgba(45,49,55,.8);color:#fff;border-color:transparent}
 @media(max-width:600px){header .pill{padding:8px 14px;font-size:.82rem}header button.pill{font-size:.84rem;padding:8px 16px}header .pill svg{width:16px;height:16px}.cta{padding:26px}.glow{padding:26px}.stats strong{font-size:2.4rem}main{padding:0 16px 60px}}
+
+/* contato sem link automático (azul/sublinhado) no celular */
+.cta p a,a[href^="tel"],a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important;font:inherit!important;pointer-events:none}
+
+/* ===== faixa de palavras-chave ===== */
+.marq{position:relative;width:100vw;margin:90px 0 0 calc(50% - 50vw);overflow:hidden;padding:26px 0;-webkit-mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.marq div{display:flex;gap:56px;width:max-content;animation:mq 38s linear infinite;font:300 clamp(1.6rem,3.4vw,2.8rem) Outfit,sans-serif;letter-spacing:-1px;color:#a2a6ab;white-space:nowrap;will-change:transform}
+.marq b{font-weight:600;color:var(--tx)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.marq+#sobre{margin-top:50px}
 
 /* ===== SOBRE MIM ===== */
 #sobre{margin-top:110px;scroll-margin-top:90px}
@@ -221,6 +232,10 @@ body.lens-on,body.lens-on *{cursor:none!important}
     <div><b>Estagiário em Folha de Pagamento</b><em>Mai/2023 – Abr/2024</em><p>Retificações de GFIP, validação de SEFIP, PER/DCOMP Web e DCTFWeb.</p></div>
    </div></div></div><i class="arw"></i></div>
  </div>
+ <div class="marq" aria-hidden="true"><div>
+  <span><b>Tributação</b> Previdenciária</span><span><b>Recuperação</b> de Créditos</span><span><b>Inteligência</b> Fiscal</span><span><b>eSocial</b> &amp; DCTFWeb</span><span><b>PER/DCOMP</b> Web</span><span><b>Automação</b> Python &amp; VBA</span><span><b>IA</b> Aplicada</span><span><b>Dados</b> &amp; Tecnologia</span>
+  <span><b>Tributação</b> Previdenciária</span><span><b>Recuperação</b> de Créditos</span><span><b>Inteligência</b> Fiscal</span><span><b>eSocial</b> &amp; DCTFWeb</span><span><b>PER/DCOMP</b> Web</span><span><b>Automação</b> Python &amp; VBA</span><span><b>IA</b> Aplicada</span><span><b>Dados</b> &amp; Tecnologia</span>
+ </div></div>
   <section id="sobre">
   <span class="eb rv">Conheça quem está por trás</span>
   <h2 class="hd" data-split>Sobre mim</h2>
